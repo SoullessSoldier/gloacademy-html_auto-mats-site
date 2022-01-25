@@ -6,5 +6,7 @@
 Часть 2. Пишем код для шапки и подвала сайта\
 Публикуем сайт на Github
 
-necolas.github.io/normalize.css — Normalize CSS
+*в подвале декор можно сделать псевдоэлементами либо фоном*
 
+necolas.github.io/normalize.css — Normalize CSS
+https://svgsprit.es/ - Sprite generator
