@@ -9,7 +9,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/main.js" defer></script>
 </head>
 <body>
     <header class="header">
@@ -61,7 +64,7 @@
                             <div class="main-display__title">EVARUGS</div>                    
                         </div>
                         <ul class="main-display__nav">
-                            <li>отзывы</li>
+                            <li><a href="#review">отзывы</a></li>
                             <li><a href="#about">что это?</a></li>
                             <li><a href="#footer">контакты</a></li>
                         </ul>
@@ -132,67 +135,81 @@
                 </div>
             </div>
         </div>
-        <div class="review">
+        <div class="review" id="review">
             <div class="container">
-                <div class="review__slider">
-                    <div class="review__slide">
-                        <div class="review__slide-text">
-                            Коврики супер!!! Качество на высшем уровне!!!
-                            Удачи и побольше заказов вам!!! Большое спасибо!
+                <div class="review__slider swiper">
+                    <div class="swiper-wrapper review__wrapper">
+                        <div class="review__slide swiper-slide">
+                            <div class="review__slide-text">
+                                Коврики супер!!! Качество на высшем уровне!!!
+                                Удачи и побольше заказов вам!!! Большое спасибо!
+                            </div>
+                            <div class="review__slide-name">Константин В.</div>
+                            <div class="review__slide-img">
+                                <div class="review__slide-photo">
+                                    <img src="img/otz1.jpg" alt="">
+                                </div>
+                            </div>
                         </div>
-                        <div class="review__slide-name">Константин В.</div>
-                        <div class="review__slide-photo">
-                            <img src="img/otz1.jpg" alt="">
+                        <div class="review__slide swiper-slide">
+                            <div class="review__slide-text">
+                                Покупала у ребят коврики для Хундай солярис в подарок молодому человеку. 
+                                Все очень понравилось. Буду советовать только вас.
+                            </div>
+                            <div class="review__slide-name">Вера К.</div>
+                            <div class="review__slide-img">
+                                <div class="review__slide-photo">
+                                    <img src="img/otz2.jpg" alt="">
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="review__slide">
-                        <div class="review__slide-text">
-                            Покупала у ребят коврики для Хундай солярис в подарок молодому человеку. 
-                            Все очень понравилось. Буду советовать только вас.
+                        <div class="review__slide swiper-slide">
+                            <div class="review__slide-text">
+                                Спасибо, все приехало, поставил. Результатом доволен, в машине супер! Заказывал на Ниссан.
+                            </div>
+                            <div class="review__slide-name">Николай П.</div>
+                            <div class="review__slide-img">
+                                <div class="review__slide-photo">
+                                    <img src="img/otz3.jpg" alt="">
+                                </div>
+                            </div>
                         </div>
-                        <div class="review__slide-name">Вера К.</div>
-                        <div class="review__slide-photo">
-                            <img src="img/otz2.jpg" alt="">
+                        <div class="review__slide swiper-slide">
+                            <div class="review__slide-text">
+                                Коврики супер!!! Качество на высшем уровне!!!
+                                Удачи и побольше заказов вам!!! Большое спасибо!
+                            </div>
+                            <div class="review__slide-name">Константин В.</div>
+                            <div class="review__slide-img">
+                                <div class="review__slide-photo">
+                                    <img src="img/otz1.jpg" alt="">
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="review__slide">
-                        <div class="review__slide-text">
-                            Спасибо, все приехало, поставил. Результатом доволен, в машине супер! Заказывал на Ниссан.
+                        <div class="review__slide swiper-slide">
+                            <div class="review__slide-text">
+                                Покупала у ребят коврики для Хундай солярис в подарок молодому человеку. 
+                                Все очень понравилось. Буду советовать только вас.
+                            </div>
+                            <div class="review__slide-name">Вера К.</div>
+                            <div class="review__slide-img">
+                                <div class="review__slide-photo">
+                                    <img src="img/otz2.jpg" alt="">
+                                </div>
+                            </div>
                         </div>
-                        <div class="review__slide-name">Николай П.</div>
-                        <div class="review__slide-photo">
-                            <img src="img/otz3.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="review__slide">
-                        <div class="review__slide-text">
-                            Коврики супер!!! Качество на высшем уровне!!!
-                            Удачи и побольше заказов вам!!! Большое спасибо!
-                        </div>
-                        <div class="review__slide-name">Константин В.</div>
-                        <div class="review__slide-photo">
-                            <img src="img/otz1.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="review__slide">
-                        <div class="review__slide-text">
-                            Покупала у ребят коврики для Хундай солярис в подарок молодому человеку. 
-                            Все очень понравилось. Буду советовать только вас.
-                        </div>
-                        <div class="review__slide-name">Вера К.</div>
-                        <div class="review__slide-photo">
-                            <img src="img/otz2.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="review__slide">
-                        <div class="review__slide-text">
-                            Спасибо, все приехало, поставил. Результатом доволен, в машине супер! Заказывал на Ниссан.
-                        </div>
-                        <div class="review__slide-name">Николай П.</div>
-                        <div class="review__slide-photo">
-                            <img src="img/otz3.jpg" alt="">
-                        </div>
-                    </div>                    
+                        <div class="review__slide swiper-slide">
+                            <div class="review__slide-text">
+                                Спасибо, все приехало, поставил. Результатом доволен, в машине супер! Заказывал на Ниссан.
+                            </div>
+                            <div class="review__slide-name">Николай П.</div>
+                            <div class="review__slide-img">
+                                <div class="review__slide-photo">
+                                    <img src="img/otz3.jpg" alt="">
+                                </div>
+                            </div>
+                        </div> 
+                    </div>                   
                 </div>
             </div>
         </div>

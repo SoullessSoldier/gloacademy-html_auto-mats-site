@@ -173,6 +173,10 @@ a{
 .main-display__right{
     width: 53.3rem;
     height: 68.6em;
+    background-image: url('../img/bg-cover1.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
 }
 .main-display__header{
     margin-bottom: 1rem;
@@ -203,6 +207,7 @@ a{
 }
 .about{
     margin-top: 20rem;
+    margin-bottom: 22.5rem;
 }
 .about__header{
     margin-bottom: 10rem;
@@ -253,20 +258,75 @@ a{
     line-height: 114%;
     color: #767676;
 }
+.review{
+    background: linear-gradient(94.31deg, rgba(212, 20, 90, 0.25) 0.96%, rgba(46, 49, 146, 0.25) 104.83%);
+}
+.review__wrapper{
+    padding-top: 7rem;
+    margin-top: 3.7rem;
+    margin-bottom: 7.3rem;
+}
 .review__slide{
     background-color: #fff;
     box-shadow: 0rem 0rem 3rem rgba(0, 0, 0, 0.25);
     border-radius: 0.9rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 53.6rem;
+    max-height: 18rem;
+    /*padding-left: 44px;
+    padding-right: 44px;*/
+    padding: 10.3rem 2rem 5rem 2rem;
+
+    position: relative;
 }
 .review__slide-text{
-
+    font-weight: 300;
+    font-size: 1.8rem;
+    line-height: 117%;
+    text-align: center;
+    margin-bottom: 0.8rem;
 }
 .review__slide-name{
-
+    font-weight: 300;
+    font-size: 1.3rem;
+    line-height: 115%;
+    color: #8E8E8E;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.review__slide-name::before{
+    content: '';
+    display: block;
+    width: 13rem;
+    height: 0.2rem;
+    margin-bottom: 0.8rem;
+    background: linear-gradient(90deg, rgba(212, 20, 90, 1) 0%, rgba(61, 91, 245, 1) 100%);
+}
+.review__slide-img{
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    width: 9.7rem;
+    height: 9.7rem;
+    background: linear-gradient(180deg, #e29bb5 -0.03%, #adaee6 100.01%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    top: -30%;
+    transform: translateX(-50%);
+    
 }
 .review__slide-photo{
-    clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
-    width: 10.5rem;
-    height: 10.5rem;
-    background-color: #fff;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    width: 9rem;
+    height: 9rem;
+    /*background-color: #fff;*/
 }
+.swiper {
+    /*
+    height: 357px;*/
+  }
